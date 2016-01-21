@@ -14,7 +14,19 @@
         <a-mouseenter color="#FFC65D"></a-mouseenter>
         <a-mouseleave color="green"></a-mouseleave>
       </a-cube>
-      <a-sky src="assets/grid.png"></a-sky>
+
+      <a-entity geometry="primitive: sphere;
+                            radius: 5000;
+                            segmentsWidth: 64;
+                            segmentsHeight: 64"
+                  material="shader: flat;
+                            color: red;
+                            fog: false"
+                  scale="-1 1 1">
+        </a-entity>
+
+
+
     </a-scene>
     <script>
       function newPosition() {
