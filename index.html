@@ -25,7 +25,7 @@
     </a-scene>
     <script>
       function newPosition() {
-        var angle = Math.random() * Math.PI;
+        var angle = Math.random() * Math.PI * 2;
         var radius = Math.random() * 3 + 4;
         var height = Math.random() * 3 + 1;
         var result = { x: Math.cos(angle)*radius, y: height, z: -Math.sin(angle)*radius };
